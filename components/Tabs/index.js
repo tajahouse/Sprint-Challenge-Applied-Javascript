@@ -33,35 +33,5 @@ tabsWrapper.appendChild(topics)
 console.log(topics)
 
 
-function Tab (data) {
 
-const tabs = document.createElement('div')    
-const tab = document.createElement('p')
-const tabTwo = document.createElement('p')
-const tabThree = document.createElement('p')
-const tabFour = document.createElement('p')
-const tabFive = document.createElement('p')
-
-tab.textContent = data;
-tabTwo.textContent = data;
-tabThree.textContent = data;
-tabFour.textContent = data;
-tabFive.textContent = data;
-
-tabs.classList.add('tabs');
-tab.classList.add('tab')
-tabTwo.classList.add('tab')
-tabThree.classList.add('tab')
-tabFour.classList.add('tab')
-tabFive.classList.add('tab')
-
-tabs.appendChild(tab)
-tabs.appendChild(tabTwo)
-tabs.appendChild(tabThree)
-tabs.appendChild(tabFour)
-tabs.appendChild(tabFive)
-
-return tabs
-
-}
 
