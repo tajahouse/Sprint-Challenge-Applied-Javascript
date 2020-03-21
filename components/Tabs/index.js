@@ -7,15 +7,18 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+
+
+
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
 .then(response =>{
     console.log('Structure', response.data.topics);
     const data = response.data.topics
 
-
-    data.forEach(obj =>{
-        const tabsSect = Tab(obj)
-     topics.appendChild(tabsSect);
+    data.forEach(tab =>{
+        const newTabs = Tab(tab)
+        topics.appendChild(newTabs)
+        console.log(newTabs)
     })
 
 })
@@ -23,11 +26,11 @@ axios.get("https://lambda-times-backend.herokuapp.com/topics")
     console.log('All wrong girl!', err)
 });
 
-//Variables for tab section to append Tab
-// let tabsWrapper = document.querySelector('.tabs')
+// Variables for tab section to append Tab
+let tabsWrapper = document.querySelector('.tabs')
 let topics = document.querySelector('.topics')
-// tabsWrapper.appendChild(topics)
-// console.log(topics)
+tabsWrapper.appendChild(topics)
+console.log(topics)
 
 
 function Tab (data) {
