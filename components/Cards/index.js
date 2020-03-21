@@ -74,8 +74,6 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
      
      })
 
-
-
 })
 .catch(err =>{
     console.log('Something is Fd Up', err)
