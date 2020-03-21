@@ -35,6 +35,14 @@ const Cards = data =>{
     imgUrl.src = data.authorPhoto
     authorName.textContent = data.authorName
 
+    //Class Lists
+    myCard.classList.add('card')
+    headline.classList.add('headline')
+    author.classList.add('author')
+    imgContainer.classList.add('img-container')
+
+    
+
 
 }
 //the container
