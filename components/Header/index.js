@@ -38,9 +38,9 @@ return header;
 
 const headerContainer = document.querySelector('.header-container');
 
-console.log(headerContainer);
+// console.log(headerContainer);
 
-console.log(Header)
+// console.log(Header)
 
 headerContainer.appendChild(Header());
 
