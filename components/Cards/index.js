@@ -30,6 +30,11 @@ const Cards = data =>{
     const imgUrl = document.createElement('img');
     const authorName = document.createElement('span');
 
+    //Starts Content
+    headline.textContent = data.headline
+    imgUrl.src = data.authorPhoto
+    authorName.textContent = data.authorName
+
 
 }
 //the container
