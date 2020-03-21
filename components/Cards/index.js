@@ -61,7 +61,15 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
 
      //variables for objects and keys needed
      const key = Object.keys(cardArticles);
-     console.log(key);
+     console.log('The key is', key);
+
+     //forEach statements
+     key.forEach(value =>{
+         cardContainer.append(cardArticles)
+     })
+     card.Container.forEach(data =>{
+         cardArticles.append(keys)
+     })
 
 
 })

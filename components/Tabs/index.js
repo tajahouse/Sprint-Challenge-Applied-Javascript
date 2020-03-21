@@ -21,13 +21,13 @@ return theTabs
 
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
 .then(response =>{
-    console.log('Structure', response.data.topics);
+    // console.log('Structure', response.data.topics);
     const data = response.data.topics
 
     data.forEach(tab =>{
         const newTabs = Tab(tab)
         topics.appendChild(newTabs)
-        console.log(newTabs)
+        // console.log(newTabs)
     })
 
 })
@@ -39,7 +39,7 @@ axios.get("https://lambda-times-backend.herokuapp.com/topics")
 let tabsWrapper = document.querySelector('.tabs')
 let topics = document.querySelector('.topics')
 tabsWrapper.appendChild(topics)
-console.log(topics)
+// console.log(topics)
 
 
 
