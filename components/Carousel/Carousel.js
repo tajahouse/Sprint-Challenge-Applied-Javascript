@@ -50,7 +50,7 @@ const carousel = data =>{
   myCarousel.appendChild(rightButton)
  
  return myCarousel 
-}
+} 
 
 const carouselContainer = document.querySelector('.carousel-container');
 carouselContainer.appendChild(myCarousel(data));
