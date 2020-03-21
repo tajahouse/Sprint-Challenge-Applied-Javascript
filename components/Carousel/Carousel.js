@@ -28,11 +28,31 @@ const carousel = data =>{
   const imgFour = document.createElement('img')
   const rightButton = document.createElement('div')
 
-  imgOne.src= "./assets/carousel/mountains.jpeg"
+  imgOne.textContent = data.img("./assets/carousel/mountains.jpeg")
   imgTwo.src= "./assets/carousel/computer.jpeg"
   imgThree.src= "./assets/carousel/trees.jpeg"
   imgFour.src= "./assets/carousel/turntable.jpeg"
 
-  
+  myCarousel.classList.add(carousel)
+  leftButton.classList.add(left-button)
+  rightButton.classList.add(right-button)
+  imgOne.classList.add(img)
+  imgTwo.classList.add(img)
+  imgThree.classList.add(img)
+  imgFour.classList.add(img)
 
+
+  myCarousel.appendChild(leftButton)
+  myCarousel.appendChild(imgOne)
+  myCarousel.appendChild(imgTwo)
+  myCarousel.appendChild(imgThree)
+  myCarousel.appendChild(imgFour)
+  myCarousel.appendChild(rightButton)
+ 
+ return myCarousel 
 }
+
+const carouselContainer = document.querySelector('.carousel-container');
+carouselContainer.appendChild(myCarousel(data));
+
+
