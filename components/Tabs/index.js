@@ -8,6 +8,15 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
+const Tab = data =>{
+    const theTabs = document.createElement('div')
+
+    theTabs.textContent = data
+
+    theTabs.classList.add('tab')
+
+return theTabs
+}
 
 
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
