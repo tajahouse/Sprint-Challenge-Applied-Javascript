@@ -64,8 +64,14 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
      console.log('The key is', key);
 
      //forEach statements
-     key.forEach(value =>{
-         cardContainer.append(Cards)
+
+     key.forEach(insert =>{
+         cardArticles[insert].forEach(info =>{
+             let theNewCards = Cards(info)
+             console.log(theNewCards)
+             cardContainer.append(theNewCards)
+         })
+     
      })
 
 
