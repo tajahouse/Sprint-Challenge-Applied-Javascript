@@ -65,11 +65,9 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
 
      //forEach statements
      key.forEach(value =>{
-         cardContainer.append(cardArticles)
+         cardContainer.append(Cards)
      })
-     card.Container.forEach(data =>{
-         cardArticles.append(keys)
-     })
+
 
 
 })
