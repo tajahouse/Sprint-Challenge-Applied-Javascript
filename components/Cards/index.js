@@ -41,8 +41,14 @@ const Cards = data =>{
     author.classList.add('author')
     imgContainer.classList.add('img-container')
 
-    
+    //Appends
+    myCard.appendChild(headline)
+    myCard.appendChild(author)
+    author.appendChild(imgContainer)
+    author.appendChild(authorName)
+    imgContainer.appendChild(imgUrl)
 
+return myCard
 
 }
 //the container
